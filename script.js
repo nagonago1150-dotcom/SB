@@ -1,6 +1,6 @@
 let currentQuestion = 1;
 const answers = {};
-const redirectUrl = 'https://example.com/sb-white-lp'; // SBホワイト販売LP URLに変更してください
+const redirectUrl = 'https://s.ebis-cosme.co.jp/so/lp/sbsub2/';
 
 // カスタムカーソルの初期化
 function initCursor() {
