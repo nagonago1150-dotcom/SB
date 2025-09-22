@@ -796,9 +796,9 @@ body::after {
 }
 
 .main-copy-asterisk {
-    font-size: 0.5em;
+    font-size: 0.4em;
     vertical-align: super;
-    opacity: 0.8;
+    opacity: 0.6;
     color: var(--text-secondary);
     margin-left: 1px;
 }
@@ -1032,7 +1032,7 @@ body::after {
     }
 
     .main-copy-asterisk {
-        font-size: 0.45em;
+        font-size: 0.35em;
     }
 
     .loading-animation {
@@ -1121,7 +1121,7 @@ body::after {
     }
 
     .main-copy-asterisk {
-        font-size: 0.4em;
+        font-size: 0.32em;
     }
 
     .copy-line1 {
@@ -1218,7 +1218,7 @@ body::after {
     }
 
     .main-copy-asterisk {
-        font-size: 0.35em;
+        font-size: 0.28em;
     }
 
     .leading-text {
