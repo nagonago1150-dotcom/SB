@@ -323,13 +323,23 @@ body::after {
     box-shadow: 0 2px 8px rgba(245, 179, 192, 0.4);
 }
 
-.disclaimer-inline {
-    font-size: 0.5em;
-    vertical-align: super;
+.shimi-with-disclaimer {
+    position: relative;
+    display: inline-block;
+}
+
+.disclaimer-below {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.3em;
     font-weight: 300;
     color: var(--text-secondary);
     opacity: 0.8;
     line-height: 1;
+    white-space: nowrap;
+    margin-top: 2px;
 }
 
 .copy-line2 {
@@ -920,8 +930,9 @@ body::after {
         padding: 0 10px;
     }
 
-    .disclaimer-inline {
-        font-size: 0.45em;
+    .disclaimer-below {
+        font-size: 0.25em;
+        margin-top: 1px;
     }
     
     .copy-decoration {
@@ -1033,8 +1044,9 @@ body::after {
         padding: 0 5px;
     }
 
-    .disclaimer-inline {
-        font-size: 0.4em;
+    .disclaimer-below {
+        font-size: 0.22em;
+        margin-top: 1px;
     }
 }
 
@@ -1081,8 +1093,9 @@ body::after {
         padding: 0 3px;
     }
 
-    .disclaimer-inline {
-        font-size: 0.35em;
+    .disclaimer-below {
+        font-size: 0.2em;
+        margin-top: 0px;
     }
 }
 
