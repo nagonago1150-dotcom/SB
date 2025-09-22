@@ -355,6 +355,21 @@ body::after {
     overflow-wrap: break-word;
 }
 
+.copy-line4 {
+    display: block;
+    font-size: clamp(16px, 2.5vw, 20px);
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 1.4s forwards;
+    position: relative;
+    color: var(--text-primary);
+    margin-top: 8px;
+    line-height: 1.4;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
 
 @keyframes numberPulse {
     0%, 100% {
@@ -690,9 +705,9 @@ body::after {
 /* ローディング画面 */
 .loading-content {
     text-align: center;
-    padding: 60px 20px 120px 20px;
+    padding: 50px 20px 140px 20px;
     position: relative;
-    min-height: 80vh;
+    min-height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -784,8 +799,9 @@ body::after {
     word-break: keep-all;
     overflow-wrap: break-word;
     line-height: 1.5;
-    margin-top: 30px;
-    max-width: 80%;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    max-width: 85%;
 }
 
 .subtle-asterisk {
@@ -955,6 +971,16 @@ body::after {
         overflow-wrap: break-word;
     }
 
+    .copy-line4 {
+        font-size: 14px;
+        margin-top: 6px;
+        line-height: 1.5;
+        padding: 0 15px;
+        letter-spacing: 0.04em;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+
     
     .copy-decoration {
         margin-top: 20px;
@@ -1042,8 +1068,8 @@ body::after {
     }
 
     .loading-content {
-        padding: 40px 15px 100px 15px;
-        min-height: 75vh;
+        padding: 35px 15px 120px 15px;
+        min-height: 80vh;
     }
 }
 
@@ -1112,8 +1138,8 @@ body::after {
     }
 
     .loading-content {
-        padding: 35px 12px 90px 12px;
-        min-height: 70vh;
+        padding: 30px 12px 110px 12px;
+        min-height: 75vh;
     }
 
     .subtle-asterisk {
@@ -1143,6 +1169,16 @@ body::after {
     .copy-line3 {
         font-size: 13px;
         margin-top: 18px;
+        line-height: 1.4;
+        padding: 0 12px;
+        letter-spacing: 0.03em;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+
+    .copy-line4 {
+        font-size: 13px;
+        margin-top: 5px;
         line-height: 1.4;
         padding: 0 12px;
         letter-spacing: 0.03em;
@@ -1209,8 +1245,8 @@ body::after {
     }
 
     .loading-content {
-        padding: 30px 10px 80px 10px;
-        min-height: 65vh;
+        padding: 25px 10px 100px 10px;
+        min-height: 70vh;
     }
 
     .subtle-asterisk {
@@ -1245,6 +1281,16 @@ body::after {
     .copy-line3 {
         font-size: 12px;
         margin-top: 16px;
+        line-height: 1.3;
+        padding: 0 10px;
+        letter-spacing: 0.02em;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+
+    .copy-line4 {
+        font-size: 12px;
+        margin-top: 4px;
         line-height: 1.3;
         padding: 0 10px;
         letter-spacing: 0.02em;
@@ -1310,15 +1356,15 @@ body::after {
 /* 免責事項スタイル */
 .disclaimer {
     position: absolute;
-    bottom: 15px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 9px;
+    font-size: 8px;
     color: var(--text-secondary);
     opacity: 0.7;
-    line-height: 1.3;
-    max-width: 95%;
+    line-height: 1.2;
+    max-width: 98%;
     word-break: keep-all;
     overflow-wrap: break-word;
 }
@@ -1329,10 +1375,11 @@ body::after {
 
 @media (max-width: 768px) {
     .disclaimer {
-        font-size: 9px;
-        bottom: 10px;
+        font-size: 7px;
+        bottom: 8px;
         padding: 0 10px;
-        max-width: 95%;
+        max-width: 98%;
+        line-height: 1.1;
     }
 }
 
