@@ -702,8 +702,13 @@ body::after {
 /* ローディング画面 */
 .loading-content {
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 20px 120px 20px;
     position: relative;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .thank-you {
@@ -711,7 +716,7 @@ body::after {
     font-size: 36px;
     font-weight: 300;
     color: var(--text-primary);
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     opacity: 0;
     animation: fadeInUp 1s ease-out forwards;
     letter-spacing: 0.1em;
@@ -724,17 +729,17 @@ body::after {
     font-size: 20px;
     font-weight: 300;
     color: var(--text-secondary);
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     opacity: 0;
     animation: fadeInUp 1s ease-out 0.3s forwards;
     letter-spacing: 0.08em;
 }
 
 .loading-animation {
-    margin: 80px auto;
+    margin: 40px auto;
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 .ripple-container {
@@ -782,7 +787,7 @@ body::after {
 }
 
 .loading-text {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--text-secondary);
     opacity: 0;
     animation: fadeInUp 1s ease-out 0.6s forwards, pulse 2.5s ease-in-out 1.8s infinite;
@@ -791,6 +796,8 @@ body::after {
     word-break: keep-all;
     overflow-wrap: break-word;
     line-height: 1.5;
+    margin-top: 30px;
+    max-width: 80%;
 }
 
 @keyframes pulse {
@@ -992,19 +999,34 @@ body::after {
         font-size: 24px;
         white-space: nowrap;
         letter-spacing: 0.08em;
+        margin-bottom: 20px;
     }
     
     .leading-text {
         font-size: 18px;
+        margin-bottom: 35px;
     }
     
     .loading-text {
-        font-size: 16px;
+        font-size: 15px;
         white-space: normal;
         line-height: 1.4;
         padding: 0 15px;
         word-break: keep-all;
         overflow-wrap: break-word;
+        margin-top: 25px;
+        max-width: 90%;
+    }
+
+    .loading-animation {
+        margin: 30px auto;
+        width: 180px;
+        height: 180px;
+    }
+
+    .loading-content {
+        padding: 40px 15px 100px 15px;
+        min-height: 75vh;
     }
 }
 
@@ -1045,6 +1067,7 @@ body::after {
     .thank-you {
         font-size: 22px;
         transform: scale(0.95);
+        margin-bottom: 18px;
     }
 
     .loading-text {
@@ -1055,6 +1078,19 @@ body::after {
         padding: 0 10px;
         word-break: keep-all;
         overflow-wrap: break-word;
+        margin-top: 22px;
+        max-width: 95%;
+    }
+
+    .loading-animation {
+        margin: 25px auto;
+        width: 160px;
+        height: 160px;
+    }
+
+    .loading-content {
+        padding: 35px 12px 90px 12px;
+        min-height: 70vh;
     }
 
     .copy-line1 {
@@ -1094,6 +1130,7 @@ body::after {
         font-size: 20px;
         transform: scale(0.85);
         letter-spacing: 0.04em;
+        margin-bottom: 15px;
     }
 
     .loading-text {
@@ -1105,10 +1142,24 @@ body::after {
         padding: 0 8px;
         word-break: keep-all;
         overflow-wrap: break-word;
+        margin-top: 20px;
+        max-width: 98%;
+    }
+
+    .loading-animation {
+        margin: 20px auto;
+        width: 140px;
+        height: 140px;
+    }
+
+    .loading-content {
+        padding: 30px 10px 80px 10px;
+        min-height: 65vh;
     }
 
     .leading-text {
         font-size: 17px;
+        margin-bottom: 30px;
     }
 
     .copy-line1 {
@@ -1190,15 +1241,15 @@ body::after {
 /* 免責事項スタイル */
 .disclaimer {
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 10px;
+    font-size: 9px;
     color: var(--text-secondary);
     opacity: 0.7;
-    line-height: 1.4;
-    max-width: 90%;
+    line-height: 1.3;
+    max-width: 95%;
     word-break: keep-all;
     overflow-wrap: break-word;
 }
