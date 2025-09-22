@@ -788,6 +788,21 @@ body::after {
     max-width: 80%;
 }
 
+.subtle-asterisk {
+    font-size: 0.7em;
+    opacity: 0.6;
+    vertical-align: super;
+    color: var(--text-secondary);
+}
+
+.main-copy-asterisk {
+    font-size: 0.5em;
+    vertical-align: super;
+    opacity: 0.8;
+    color: var(--text-secondary);
+    margin-left: 1px;
+}
+
 @keyframes pulse {
     0%, 100% {
         opacity: 1;
@@ -1012,6 +1027,14 @@ body::after {
         max-width: 90%;
     }
 
+    .subtle-asterisk {
+        font-size: 0.6em;
+    }
+
+    .main-copy-asterisk {
+        font-size: 0.45em;
+    }
+
     .loading-animation {
         margin: 30px auto;
         width: 180px;
@@ -1091,6 +1114,14 @@ body::after {
     .loading-content {
         padding: 35px 12px 90px 12px;
         min-height: 70vh;
+    }
+
+    .subtle-asterisk {
+        font-size: 0.55em;
+    }
+
+    .main-copy-asterisk {
+        font-size: 0.4em;
     }
 
     .copy-line1 {
@@ -1180,6 +1211,14 @@ body::after {
     .loading-content {
         padding: 30px 10px 80px 10px;
         min-height: 65vh;
+    }
+
+    .subtle-asterisk {
+        font-size: 0.5em;
+    }
+
+    .main-copy-asterisk {
+        font-size: 0.35em;
     }
 
     .leading-text {
